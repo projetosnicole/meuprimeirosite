@@ -2,3 +2,17 @@ body{
 background-color:#FFFACD;
 
 }
+
+h1, h2{
+color: slateblue;
+text-align: center;
+}
+
+figure{text-align: center;
+
+}
+
+.contaíner{
+    width: 70%;
+    margin: auto;
+}
