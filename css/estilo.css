@@ -30,3 +30,38 @@ p{
     color: #CD853F;
     font-size: 1.5em;
 }
+
+/* unvisited link */
+a:link {
+    color: cornflowerblue; 
+  }
+  
+  /* visited link */
+  a:visited {
+    color: slateblue;
+ 
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: darkseagreen;
+
+  }
+  
+  /* selected link */
+  a:active {
+   color: black;
+  }
+
+  a:link, a:visited {
+    background-color: slateblue;
+    color:white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  ​
+  a:hover, a:active {
+    background-color: red;
+  }
