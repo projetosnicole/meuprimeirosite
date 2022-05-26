@@ -9,6 +9,14 @@ background-color:#FFFACD;
   
 }
 
+.itens_menu{
+  padding-top: 1%;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+
 h1, h2{
 color: slateblue;
 text-align: center;
@@ -59,15 +67,7 @@ p{
    color: black;
   }
   
-  a:link, a:visited {
-    background-color: slateblue;
-    color:white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-  ​
-  a:hover, a:active {
-    background-color: red;
-  }
+footer{
+  background-color: rgba(155, 48, 255, 0.5);
+  padding: 0.5%;
+}
