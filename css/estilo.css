@@ -1,25 +1,38 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
 background-color:#FFFACD;
 
 }
 
 .menu{
-  background-color: rgba(155, 48, 255, 0.5);
   padding: 2%;
   
 }
 
 .itens_menu{
-  padding-top: 1%;
+  padding-top: 0.8%;
   line-height: 1.5;
   text-align: center;
   font-size: 1.3em;
 }
 
+.itens_menu a:visited, .intens_menu a:link{
+  color:#DB7093;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.itens_menu a:hover{
+background-color: rgba(186, 85, 211, 1);
+}
 
-h1, h2{
+h1{
 color: slateblue;
 text-align: center;
+font-size: 1.8em;
+margin-bottom: 2%;
 }
 
 figure{
@@ -43,6 +56,10 @@ figure{
 p{
     color: #CD853F;
     font-size: 1.5em;
+    line-height: 1.3;
+    text-align: justify;
+    text-indent: 40px;
+    margin-bottom: 2%;
 }
 
 /* unvisited link */
@@ -69,5 +86,12 @@ p{
   
 footer{
   background-color: rgba(155, 48, 255, 0.5);
-  padding: 0.5%;
+  padding: 0.3%;
+  margin-top: 2%;
+}
+
+
+section{
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
