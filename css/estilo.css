@@ -18,11 +18,12 @@ background-color: #363636;
   font-size: 1.3em;
 }
 
-.itens_menu a:visited, .intens_menu a:link{
+.itens_menu a:visited, .itens_menu a:link{
   color:#6495ED;
   text-decoration: none;
   font-weight: bolder;
 }
+
 .itens_menu a:hover{
 background-color: rgba(135,206,235, 0.9);
 /*mouse over link*/
