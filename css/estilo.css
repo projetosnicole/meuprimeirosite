@@ -177,3 +177,16 @@ footer{
   padding-bottom: 1.5%;
   width: 20%;
 }
+
+table{
+  width: 100%;
+  border-collapse: collapse ;
+}
+
+td,th{
+  border: 2px solid #FFFAFA ;
+  padding: 1%;
+  color: #FFFAFA;
+  font-family:  'EduTASBeginner-VariableFont_wghtv', cursive;
+
+}
