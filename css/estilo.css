@@ -190,3 +190,10 @@ td,th{
   font-family:  'EduTASBeginner-VariableFont_wghtv', cursive;
 
 }
+
+th{
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+
