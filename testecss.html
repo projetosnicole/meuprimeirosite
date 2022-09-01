@@ -4,22 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste CSS interno e inline</title>
-    <style>
-        body{
-            background-color: #9191ee;
-        }
-        h1{
-            background-color: rgb(192, 253, 143);
-        }
-        p{
-            background-color: rgb(192, 253, 143);
-        }
-    </style>
+    <title>Document</title>
 </head>
+
+<style>
+     body{
+            background-color: black;
+        }
+
+        h1{
+            color: 	#ffffff;
+        }
+
+        p{
+            color: rgb(0, 0, 0);
+        }
+
+        .container{
+            position: relative;
+            background-color: #1C1C1C;
+            width: 100%;
+            height: 1220px;
+            text-align: center;
+        }
+
+        .topoesquerda{
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            font-size: 18px;
+            width: 20%;
+            background-color: rgb(155, 155, 248);       
+         }
+
+         .topodireita{
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            font-size: 18px;
+            width: 20%;
+            background-color: rgb(155, 155, 248);  
+         }
+
+         .abaixoesquerda{
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            font-size: 18px;
+            width: 20%;
+            background-color: rgb(155, 155, 248);       
+         }
+
+         .abaixodireita{
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            font-size: 18px;
+            width: 20%;
+            background-color: rgb(155, 155, 248);  
+         }
+
+         .centro{
+            position: absolute;
+            top: 50%;
+            right: 40%;
+            font-size: 18px;
+            width: 20%;
+            background-color:rgb(155, 155, 248);
+         }
+
+         .fixo{
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+            background-color:#1C1C1C;
+         }
+
+         .main{
+            margin-top: 8%;
+         }
+</style>
+
 <body>
-    <h1 style="border-color: black; border-style: groove;"> teste CSS interno e inline</h1>
-    <p style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vero, quam animi et voluptatem aliquam dicta eos aspernatur impedit? Consectetur vel rem a optio quo error voluptatem atque tempora facere!</p>
-    <p style="color: rgb(0, 0, 0);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis doloremque, voluptas error quae tenetur, perspiciatis laborum ratione deleniti voluptates mollitia reprehenderit excepturi ex, molestiae sit perferendis quos deserunt et?</p>
+    <header class="fixo">
+        <h1 style="border-color: white;border-style: dotted;">Teste CSS Interno e Inline</h1>
+        <p style="border: white;border-style: groove; background-color:  #ffb5b5;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, id maiores blanditiis, libero nihil quae eum modi hic perferendis sed eius, quia pariatur at ex alias voluptatibus? Ut, in sequi.</p>
+        <p style="border: white;border-style: groove;background-color:  #ffb5b5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam cum id consequatur asperiores temporibus quisquam reprehenderit laudantium porro nesciunt eaque aspernatur fugiat, dolore similique, ullam quas labore vitae exercitationem accusamus.</p>
+    </header>
+    <div class="main">
+        <h1>Testando</h1>
+        <div class="container">
+            <div class="topoesquerda">Topo Esquerda</div>
+            <div class="topodireita">Topo Direita</div>
+            <div class="abaixoesquerda">Abaixo Esquerda</div>
+            <div class="abaixodireita">Abaixo Direita</div>
+            <div class="centro">Centro</div>
+        </div>
+    </div>
+    
+    <a href="index.html"><div>Voltar a ágina nicial</div></a>sss 
 </body>
 </html>
