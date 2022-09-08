@@ -12,6 +12,11 @@ background-color: #1C1C1C;
 
 }
 
+menu{
+  background-color: rgba(153, 135, 235, 0.9);
+  padding: 2%;  
+}
+
 .itens_menu{
   line-height: 1.5;
   text-align: center;
@@ -285,20 +290,6 @@ input[type=submit]{
   font-weight: bolder;
 }
 
-.submit{
-  color: #97ff71;
-  background-color: #000000;
-  border-color: #97ff71;
-}
-
-.fixo{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
 @media screen and (max-width: 450px){
 
 
@@ -311,4 +302,12 @@ input[type=submit]{
   border-radius: 50px;
 }
 
+}
+
+.logo{
+  text-align: center;
+}
+
+.img_logo{
+  width: 10%;
 }
