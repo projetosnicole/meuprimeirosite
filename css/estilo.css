@@ -8,57 +8,49 @@ html{
 }
 
 body{
-background-color: #1C1C1C;
-
+  background-color: #1C1C1C;
 }
 
-menu{
+header {
   background-color: rgba(153, 135, 235, 0.9);
-  padding: 2%;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fixo {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
 }
 
 .itens_menu{
-  line-height: 1.5;
   text-align: center;
+}
+
+.itens_menu li{
   font-size: 1.3em;
-  overflow: hidden;
-  background-color:black;
-  margin-top: 0%;
-  font-family:  'EduTASBeginner-VariableFont_wghtv', cursive;
+  padding: 1%;
+  margin: 0.5%;
+  margin-bottom: 1%;
 }
 
 .itens_menu a:visited, .itens_menu a:link{
-  color:white;
+  color: #FFFF;
   text-decoration: none;
   font-weight: bolder;
 }
 
 .itens_menu a:hover{
-background-color: rgba(135,206,235, 0.9);
-/*mouse over link*/
-color: rgb(255, 255, 255);
-
-}
-
-li{
-  display: inline;
-  float: left;
-}
-
-li a{
-  display: block;
-  padding: 14px 16px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
-li a:hover:not(.active){
   background-color: #363636;
+  padding: 1%;
 }
 
-.active{
-  background-color: #6495ED;
+.banner {
+  width: 100%;
+  margin-right: 1%;
+  padding-right: 1%;
 }
 
 h1{
@@ -114,7 +106,7 @@ figure{
 
 }
 
-.contaíner{
+.container{
     width: 70%;
     margin: auto;
 }
@@ -168,29 +160,40 @@ footer{
   text-align: center;
 }
 
+footer p {
+  text-align: center;
+  font-size: 1em;
+}
+
+.footer-top {
+  margin-top: 7%;
+}
+
 .botao{
+  background-color: rgba(9, 7, 6, 0.3);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   margin: 5%;
-   width: 100px;
-   height: 30px;
-   padding: 2%;
-   background-color: rgba(9, 7, 6, 0.3);
-   margin: auto;
-   padding-right: 5%;
- }
- 
- .botao:hover{
-   background-color:#FFDEAD;
- }
- 
- .botao a:link, .botao a:visited{
-   color: slateblue;
-   text-decoration: none;
-   font-weight: bolder;
- }
- 
- .botao p{
-   text-align: center;
- }
+  cursor: pointer;
+  margin: 1%;
+  width: 100px;
+}
+
+.botao:hover{
+  background-color:#FFDEAD;
+  color: #000;
+}
+
+.botao a:link, .botao a:visited{
+  color: slateblue;
+  text-decoration: none;
+  font-weight: bolder;
+}
 
 .img_direita{
   float: right;
@@ -216,6 +219,7 @@ table{
 td,th{
   border: 2px solid #FFFAFA ;
   padding: 1%;
+  color: #fff;
 }
 
 th{
@@ -235,14 +239,22 @@ audio{
   width: 80%;
 }
 
+form {
+  box-sizing: border-box;
+}
+
 .form{
   box-sizing: border-box;
   background-color: grey;
   padding: 5%;
   border-radius: 25px;
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 2%;
+  margin-bottom: 2%
 }
 
-input[type=text], input[type=tel], input[type=email] select,textarea{
+input[type=text], input[type=tel], input[type=email], select, textarea {
   width: 90%;
   padding: 12px;
   border-radius: 25px;
@@ -275,39 +287,132 @@ label{
 }
 
 input[type=submit]{
-  background-color: #98FB98;
+  background-color: #fff;
   color: #000000;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   float: right;
-  margin-top: 1%;
-}
-
-input[type=submit]{
-  background-color: #FFFAFA;
+  margin-top: 2%;
   font-weight: bolder;
 }
 
-@media screen and (max-width: 450px){
-
-
-.col-25, col-75, input[type=submit]{
-  width: 100%;
-  margin-top: 0;
+input[type=submit]:hover {
+  background-color: rgba(153, 135, 235, 0.9);
+  color: #fff;
+  
 }
 
-.form{
-  border-radius: 50px;
+@media screen and (max-width: 600px){
+
+
+  .col-25, col-75, input[type=submit]{
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .form{
+    border-radius: 50px;
+  }
+
+  .logo {
+    text-align: center;
+    margin: 1%;
+  }  
+
+  .img_logo {
+    width: 20%;
+  }
+
+  .banner {
+    margin-top: 45%;
+  }
+
+  .img_topo {
+    width: 100%;
+  }
+
+  .descer {
+    margin-top: 50%;
+  }
+  
 }
+
+@media screen and (min-width: 601px) {
+  
+  header {
+    background-color: rgba(153, 135, 235, 0.9);
+    flex-direction: row;
+    padding: 2%;
+  }    
+
+  .itens_menu {
+      position: absolute;
+      right: 5%;
+      width: 80%;
+  }
+
+  .itens_menu ul li {
+      display: inline;
+      margin: 1%;
+  }
+
+  .itens_menu a:visited, .itens_menu a:link{
+      color: #FFFF;
+      text-decoration: none;
+      font-weight: bolder;
+      text-align: center;
+      padding: 1%;
+  }
+
+  .itens_menu a:hover{
+      background-color: #363636;
+  }    
+
+  .img_logo {
+      width: 40%;
+  }
+
+  .logo {
+      width: 20%;
+      text-align: left;
+      margin-left: 4%;
+  }
+
+  .banner {
+    margin-top: 6%;
+  }
+
+  .img_topo {
+    width: 100%;
+  }
+
+  .descer {
+    margin-top: 8%;
+  }
 
 }
 
-.logo{
-  text-align: center;
-}
+@media screen and (max-width: 430px) {
 
-.img_logo{
-  width: 10%;
+  .banner {
+    margin-top: 55%;
+  }
+
+  .descer {
+    margin-top: 60%;
+  }
+
+  .form{
+    box-sizing: border-box;
+    background-color: grey;
+    padding: 5%;
+    border-radius: 15px;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%
+  }
+
 }
