@@ -1,2 +1,2 @@
-# meuprimeirosite
-https://projetosnicole.github.io/meuprimeirosite/
+# curriculo 
+https://projetosnicole.github.io/curriculo/
